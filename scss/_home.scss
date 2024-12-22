@@ -244,3 +244,232 @@
         }
     }
 }
+
+.s-depoimentos {
+    padding-top: 13.4rem;
+    .container {
+        .top {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+            h2 {
+                color: $gray-600;
+                span {
+                    display: block;
+                    color: $gray-200;
+                    margin-bottom: 1.4rem;
+                }
+            }
+            .swiper-pagination {
+                position: relative;
+                text-align: right;
+                width: auto;
+                display: flex;
+                gap: 0.4rem;
+                .swiper-pagination-bullet {
+                    background-color: $brand-yellow;
+                    opacity: 0.3;
+                    border-radius: 12px;
+                    transition: all .3s;
+                    &-active {
+                        opacity: 1;
+                        width: 17.23px;
+                    }
+                }
+            }
+        }
+        .slide-depoimentos {
+            overflow: hidden;
+        }
+    }
+}
+
+.s-conta-digital {
+    padding-top: 12.7rem;
+    padding-bottom: 8.5rem;
+    .container {
+        display: flex;
+        .text {
+            max-width: 54.2rem;
+            h2 {
+                color: $gray-600;
+                margin-bottom: 4.5rem;
+                span {
+                    display: block;
+                    color: $gray-200;
+                    margin-bottom: 0.9rem;
+                }
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 4.5rem;
+                margin-bottom: 4.9rem;
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 2.6rem;
+                    .icon {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        @include flex(row, center, center);
+                        background-color: $brand-green-light;
+                        border-radius: 0.8rem;
+                    }
+                    h4 {
+                        color: $gray-400;
+                        margin-bottom: 0.4rem;
+                    }
+                    p {
+                        color: $gray-300;
+                        font-size: 1.8rem;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 71.2rem;
+            height: 59.8rem;
+            margin-left: -3.8rem;
+            left: 12.5rem;
+            img {
+                position: absolute;
+                &.mockup-01 {
+                    left: 0;
+                    bottom: 4.7rem;
+                    z-index: 1;
+                }
+                &.mockup-02 {
+                    top: 0;
+                    left: 25.8rem;
+                    z-index: 0;
+                }
+                &.circle {
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 4.9rem;
+    background-color: $brand-blue;
+    .container{
+        .top {
+            @include flex(row, center, space-between);
+            padding-bottom: 4.9rem;
+            border-bottom: 2px solid rgba(73, 197, 253, 0.2);
+            margin-bottom: 5.7rem;
+            .share {
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                span {
+                    color: #FFF;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 125%;
+                    opacity: 0.7;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 3rem;
+                }
+            }
+        }
+        .main {
+            @include flex(row, flex-start, space-between);
+            padding-bottom: 6.2rem;
+            border-bottom: 2px solid rgba(73, 197, 253, 0.2);
+            nav {
+                width: 100%;
+                max-width: 86rem;
+                @include flex(row, flex-start, space-between);
+                .item {
+                    strong {
+                        color: #FFF;
+                        font-family: "Poppins", serif;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-bottom: 2.5rem;
+                        display: inline-block;
+                    }
+                    ul {
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom: 2.5rem;
+                            }
+                            a {
+                                color: #FFF;
+                                font-size: 1.4rem;
+                                font-weight: 400;
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+            .btns {
+                width: 100%;
+                max-width: 28rem;
+                button {
+                    border-radius: 0.6rem;
+                    background-color: rgba(0, 164, 240, 0.23);
+                    width: 100%;
+                    height: 7.6rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 2.4rem;
+                    padding-left: 2.5rem;
+                    &:not(:last-child) {
+                        margin-bottom: 2.4rem;
+                    }
+                    .info {
+                        strong {
+                            display: block;
+                            text-align: left;
+                            color: #FFF;
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            line-height: 150%;
+                        }
+                        span {
+                            display: block;
+                            text-align: left;
+                            color: #FFF;
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+        .mensagem {
+            padding: 3.6rem 0;
+            border-bottom: 4px solid $brand-yellow;
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            .icon {
+                font-size: 1.8rem;
+            }
+            p {
+                width: 100%;
+                max-width: 66rem;
+                color: #FFF;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+    }
+}
