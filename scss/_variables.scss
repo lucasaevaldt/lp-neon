@@ -1,10 +1,11 @@
 //Cores
 $brand-blue : #0073CE;
-$brand-light-blue : #00A5F0;
+$brand-blue-light : #00A5F0;
 $brand-green-light : #00D7D7;
 $brand-yellow : #FFC800;
+$brand-gradient : linear-gradient(99.31deg, $brand-blue-light 7.94%, $brand-green-light  95.32%);
 
-//Escalas de cinza
+//Escala de cinza
 $gray-600 : #33303E;
 $gray-500 : #4E4B59;
 $gray-400 : #5F5C6B;
